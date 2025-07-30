@@ -1,0 +1,18 @@
+[package]
+name = "spike_fun"
+version = "1.0.0"
+authors = []
+
+[addresses]
+
+spike_fun = "0x2e1e06a4d4d16fb89474347f51370e06318100d01982f57d6d1d7f8293e795b5"
+
+[dev-addresses]
+
+[dependencies.SupraFramework]
+git = "https://github.com/Entropy-Foundation/aptos-core.git"
+rev = "dev"
+subdir = "aptos-move/framework/supra-framework"
+
+[dev-dependencies]
+
