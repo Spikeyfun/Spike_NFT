@@ -1,4 +1,4 @@
-module 0xa8ff8aa5c6cf9b7511250ca1218efee986a38c50c6f794dff95389623e759a4b::nft {
+module spike_nft::nft {
 
     use aptos_token::token;
     use supra_framework::account;
