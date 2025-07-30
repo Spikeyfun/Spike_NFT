@@ -1,11 +1,11 @@
 [package]
-name = "spike_fun"
+name = "NFT"
 version = "1.0.0"
 authors = []
 
 [addresses]
 
-spike_fun = "0x2e1e06a4d4d16fb89474347f51370e06318100d01982f57d6d1d7f8293e795b5"
+spike_nft = "0xa8ff8aa5c6cf9b7511250ca1218efee986a38c50c6f794dff95389623e759a4b"
 
 [dev-addresses]
 
