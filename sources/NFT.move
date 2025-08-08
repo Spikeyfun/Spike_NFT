@@ -1,4 +1,4 @@
-module spike_nft::nft {
+module NFT::nft {
 
     use aptos_token::token;
     use supra_framework::account;
@@ -120,5 +120,16 @@ module spike_nft::nft {
     #[view]
     public fun get_collection_name(): String {
         string::utf8(b"Supra Spike Collection NFT")
+    }
+
+    #[view]
+    public fun get_current_cid(): u64 acquires MintInfo {
+        borrow_global<MintInfo>(MODULE_NFT).cid
+    }
+
+    #[view]
+    public fun get_pool_address(): address acquires MintInfo {
+        let mint_info_ref = borrow_global<MintInfo>(MODULE_NFT);
+        account::get_signer_capability_address(&mint_info_ref.pool_cap)
     }
 }
