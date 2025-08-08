@@ -1,4 +1,4 @@
-module NFT::nft {
+module spike_nft::nft {
 
     use aptos_token::token;
     use supra_framework::account;
